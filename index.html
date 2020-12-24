@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <nav id="idea">
         <div class="wrapper">
           <div class="sub">
@@ -34,8 +34,9 @@
           </div>
           <div class="navList-wrapper">
             <ul>
-              <li><a href="#works" class="nav-list">WORKS</a></li>
-              <li><a href="#resume" class="nav-list">RESUME</a></li>
+              <li><a href="#works" class="nav-list">Works</a></li>
+              <li><a href="#resume" class="nav-list">Resume</a></li>
+              <li><a href="#testimonial" class="nav-list">Testimonial</a></li>
               <li><a href="#contact" class="nav-list">CONTACT</a></li>
             </ul>
           </div>
@@ -69,7 +70,49 @@
                 </div>
               </div>
             </div>
+
+            <div class="contact-list-W">
+              <ul class="contact-list">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/oluwatosin-jimoh-04894819b/"
+                    target="”_blank”"
+                  >
+                    <img
+                      src="assets/linkedin.svg"
+                      alt="linkedin"
+                      class="contact-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ekiira" target="”_blank”">
+                    <img
+                      src="assets/github.svg"
+                      alt="github"
+                      class="contact-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/oluwatosinjay_"
+                    target="”_blank”"
+                  >
+                    <img
+                      src="assets/twitter.svg"
+                      alt="twitter"
+                      class="contact-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
+            ^
+          </a>
         </div>
       </div>
     </div>
@@ -105,7 +148,9 @@
             <p>
               <span>Technologies</span>: ReactJs, Graphql, SCSS, Material UI
             </p>
-            <a href="https://github.com/ekiira/book-review-client" target="”_blank”"
+            <a
+              href="https://github.com/ekiira/book-review-client"
+              target="”_blank”"
               >Github</a
             >
           </div>
@@ -154,6 +199,137 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+
+    <section id="resume">
+      <div class="ban"></div>
+      <div class="container">
+        <div class="resume">
+          <h1 class="resume-title">Resume</h1>
+          <div class="resume-desc">
+            <p>
+              For further details of my qualification, and contributions, please
+              take a moment to review my resume.
+            </p>
+            <a
+              href="https://res.cloudinary.com/ekiira/image/upload/fl_attachment:Oluwatosin-Jimoh/v1608811421/OLUWATOSIN_JIMOH_5_kexe9s.pdf"
+              rel="noopener noreferrer"
+            >
+              <button>Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <div class="testimonial">
+        <h1 class="testimonial-title">Testimonial</h1>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <input
+              class="carousel-open"
+              type="radio"
+              id="carousel-1"
+              name="carousel"
+              aria-hidden="true"
+              hidden=""
+              checked="checked"
+            />
+            <div class="carousel-item">
+              <div>
+                <img src="./assets/man1.jpeg" alt="photography" />
+                <p>
+                  Lorem Ipsim is simply a dummy text of the printing and
+                  typesetting industry.Lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <p>CEO, FACEBOOK INC</p>
+              </div>
+            </div>
+            <input
+              class="carousel-open"
+              type="radio"
+              id="carousel-2"
+              name="carousel"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="carousel-item">
+              <div>
+                <img src="./assets/woman.jpeg" alt="photography" />
+                <p>
+                  Lorem Ipsim is simply a dummy text of the printing and
+                  typesetting industry.Lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <p>CTO, TWITTER INC</p>
+              </div>
+            </div>
+            <input
+              class="carousel-open"
+              type="radio"
+              id="carousel-3"
+              name="carousel"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="carousel-item">
+              <div>
+                <img src="./assets/man2.jpeg" alt="photography" />
+                <p>
+                  Lorem Ipsim is simply a dummy text of the printing and
+                  typesetting industry.Lorem ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <p>Director, NUCLEUS</p>
+              </div>
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1"
+              >‹</label
+            >
+            <label for="carousel-2" class="carousel-control next control-1"
+              >›</label
+            >
+            <label for="carousel-1" class="carousel-control prev control-2"
+              >‹</label
+            >
+            <label for="carousel-3" class="carousel-control next control-2"
+              >›</label
+            >
+            <label for="carousel-2" class="carousel-control prev control-3"
+              >‹</label
+            >
+            <label for="carousel-1" class="carousel-control next control-3"
+              >›</label
+            >
+            <ol class="carousel-indicators">
+              <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="contact-title">Contact</h1>
+      <div>
+        <p>Want to have a chat?</p>
+        <a href="mailto: jayoluwatosin@gmail.com" target="”_blank”">
+          <button>Shoot</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div>&#169; 2020 Oluwatosin Jimoh | All rights Reserved</div>
+    </footer>
   </body>
 </html>
